@@ -83,10 +83,30 @@ hr{
 /* -------------
 course-style
 ----------------- */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 20px;
+}
+
 .course .course-banner img{
     width: 224px;
     height: 104px;
 }
-.fa-star.filles{
-    columns: yellow;
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-star.filled{
+    color: yellow;
+}
+.fa-star.empty{
+    color: #858072;
+}
+.course-duration{
+    border-radius: 5px;
+    background-color:rgb(224, 134, 134);
+    color: red;
+    margin-right: 50px;
 }
