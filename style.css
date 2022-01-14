@@ -110,3 +110,37 @@ course-style
     color: red;
     margin-right: 50px;
 }
+
+
+/*-----------------------
+ Media Quires
+------------------- */
+@media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+    .course{
+        margin-top: 10px;
+    }
+    .players, .blogs, .courses {
+    grid-template-columns: repeat(1,1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    
+  }
+
+
+
+  @media only screen and (min-width: 688px) and (max-width:992px){
+      .container{
+          width: 100%;
+      }
+      .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+      }
+      .blogs{
+          grid-template-columns: repeat(1,1fr);
+      }
+  }
